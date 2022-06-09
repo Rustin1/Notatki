@@ -7,7 +7,9 @@ const char *samogloski = "aeiouy";
 int samogloska(char litera){
 	for(int i = 0;i<strlen(samogloski);i++){
 		if(litera == samogloski[i] || litera == samogloski[i]-97+65){
-			return 1;
+			if(litera>=65&&litera<=90||litera>=97&&litera<=122){
+				return 1;
+			}
 		}
 	}
 	return 0;
