@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int rek(n){
+int rek(int n){
 	if(n==0){
-		return 4; //start ciągu
+		return -1; //start ciągu
 	}
 	else if(n==1){
-                return 5;
+                return -2;
         }
-	return rek(n-1)+4; //jeśli nie jest to wartość początkowa to zrob działanie (np +) na poprzedniej wartości z ciągu i liczbie (np 4 lub n)
+	return rek(n-1)+rek(n-2); //jeśli nie jest to wartość początkowa to zrob działanie (np +) na poprzedniej wartości z ciągu i liczbie (np 4 lub n)
 }
 
 int main(){
