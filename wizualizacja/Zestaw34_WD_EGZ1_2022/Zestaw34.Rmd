@@ -1,0 +1,36 @@
+---
+title: "Egzamin (pierwszy termin) - Wizualizacja danych - Zestaw 34"
+lang: pl
+output:
+  pdf_document: default
+---
+
+*Zadanie 1 i 2 po 15 pkt. Zadanie 3 - 20 pkt. *
+
+*Punktacja: 46-50 pkt - bdb(5,0); 41-45 pkt - db+(4,5); 36-40 pkt - db(4,0); 31-35 pkt - dst+(3,5); 26-30 pkt - dst(3,0); 0-25 pkt - ndst (2,0).*  
+
+
+Zad.1. Odwzoruj wykres znajdujący się w pliku graficznym b34.png znajdującym się folderze. Odcienie kolorów mogą się różnić, jednak główne barwy muszą być zachowane.
+Zapisz powstały wykres w formacie jpg.
+
+Zad.2. W jednym pliku wykonaj poniższe czynności:
+
+* załaduj dane z pliku handel34.xlsx jako ramkę danych (Data Frame),
+* stwórz wykres słupkowy pionowy wybierający dane tylko dane za stacje paliw
+* kolor i szerokość słupków muszą być inne niż domyślne
+* umieść swoje imię w lewym dolnym rogu wykresu
+* wykres powinien posiadać tytuł, legendę i podpisane etykiety osi
+
+Wykres powinien być estetyczny i podpisany. Im więcej - tym lepiej.
+
+Zapisz wykres w formacie pdf za pomocą kodu.
+
+Zad.3. W jednym pliku wykonaj poniższe czynności:
+
+* załaduj dane z pliku wynagrodzenia34.csv,
+* uporządkuj dane zgodnie z koncepcją czystych danych
+* z uporządkowanych danych wybierz dane za województwa świętokrzyskie, małopolskie i podkarpackie i na tej podstawie stwórz wykres liniowy (trzy linie na jednym wykresie, każda w innym kolorze innym niż domyślny odpowiada za inne województwo), na osi poziomej mają być lata
+* wykres powinien posiadać tytuł i legendę
+* Wykres powinien być estetyczny i podpisany. Im więcej - tym lepiej.
+
+Zapisz wykres w formacie png za pomocą kodu.

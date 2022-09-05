@@ -1,0 +1,35 @@
+---
+title: "Egzamin (pierwszy termin) - Wizualizacja danych - Zestaw 25"
+lang: pl
+output:
+  pdf_document: default
+---
+
+*Zadanie 1 i 2 po 15 pkt. Zadanie 3 - 20 pkt. *
+
+*Punktacja: 46-50 pkt - bdb(5,0); 41-45 pkt - db+(4,5); 36-40 pkt - db(4,0); 31-35 pkt - dst+(3,5); 26-30 pkt - dst(3,0); 0-25 pkt - ndst (2,0).*  
+
+
+Zad.1. Odwzoruj wykres znajdujący się w pliku graficznym b25.png znajdującym się folderze. Odcienie kolorów mogą się różnić, jednak główne barwy muszą być zachowane.
+Zapisz powstały wykres w formacie pdf.
+
+Zad.2. W jednym pliku wykonaj poniższe czynności:
+
+* załaduj dane z pliku handel25.xlsx jako ramkę danych (Data Frame),
+* stwórz wykres liniowy prezentujący dane z pliku dotyczące tylko stacji paliw - kolor, styl i szerokość linii mają być inne niż domyślne
+* umieść swoje imię w prawym górnym rogu wykresu
+* wykres powinien posiadać tytuł i podpisane etykiety obu osi
+
+Wykres powinien być estetyczny i podpisany. Im więcej - tym lepiej.
+
+Zapisz wykres w formacie jpg za pomocą kodu.
+
+Zad.3. W jednym pliku wykonaj poniższe czynności:
+
+* załaduj dane z pliku pogoda25.csv,
+* podziel dane dotyczące opadów na 6 koszyków
+* stwórz wykres słupkowy prezentujący liczebność wartości w poszczególnych koszykach
+* wykres powinien posiadać tytuł i podpisane etykiety obu osi
+* Wykres powinien być estetyczny i podpisany. Im więcej - tym lepiej.
+
+Zapisz wykres w formacie png za pomocą kodu.
