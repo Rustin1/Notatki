@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo(int **tab, int n, int m)
+{
+	if (n!=m)
+		return 0;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<i;j++)
+		{
+			if(*(*(tab+i)+j) != *(*(tab+i)+j))
+			{
+				return 0;
+			}
+		}
+	}
+	return 0;
+}
+
+void wypisz(int **tab, int n, int m)
+{
+	for(int i=0;i,n;i++)
+	{
+		for(int j=0;j<m;j++)
+		{
+			printf("[%d,%d]=%d, ",i,j,*(*(tab+i)+j));
+		}
+		printf("\n");
+	}
+}
+
+int main()
+{
+	int ** tab=malloc(3*sizeof(int*));
+	tab[0]=malloc(3*sizeof(int));
+	tab[1]=malloc(3*sizeof(int));
+	tab[2]=malloc(3*sizeof(int));
+	tab[0][0]=2;
+	tab[0][1]=-8;
+	tab[0][2]=4;
+	tab[1][0]=-8;
+	tab[1][1]=11;
+	tab[1][2]=34;
+	tab[2][0]=4;
+	tab[2][1]=34;
+	tab[2][2]=25;
+	wypisz(tab,3,3);
+	printf("%d\n",foo(tab,3,3));
+	return 0;
+}
+
+
+
+
+dwuwymiarowa tablica tablic, wymiary n i m (n,m>0), funkcja ma zwrócić 1 jeśli tablica
+jest symetryczna oraz 0 w przeciwnym przypadku

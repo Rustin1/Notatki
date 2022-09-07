@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Budynek
+{
+	char * adres;
+	int numer;
+};
+
+struct Budynek foo(struct Budynek tablica[],int n)
+{
+	int indeks=0;
+	for(int i=1;i<n;i++)
+	{
+		if (strlen(tablica[i].adres) < strlen(tablica[indeks].adres))
+		{
+			indeks=i;
+		}
+	}
+	return tablica[indeks];
+};
+
+int main();
+{
+	struck Budynek b1 = {"Sloneczna",54};
+	struck Budynek b2 = {"Witosa",12};
+	struck Budynek b1 = {"Tamka",33};
+	struck Budynek tab[3] = {b1,b2,b3};
+	struck Budynek wynik = foo(tab,3);
+	printf("%s %d\n",wynik.adres, wynik.numer);
+	return 0;
+}
+
+
+
+
+
+struktura budynek o polach adres i numer. potem stwórz funkcję której argumentami
+jest niepusta tablica struktur Budynekl oraz rozmiar tablicy. funkcja ma zwrócić
+budynek o najkrótszym adresem pod kątem długości

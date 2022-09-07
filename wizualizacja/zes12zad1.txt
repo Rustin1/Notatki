@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Sportowiec{
+	char imie[8];
+	int rekord;
+};
+
+struct Sportowiec foo(struct Sportowiec tab[],int n)
+{
+	int temp=0;
+	for(int i=0;i<n;i++)
+	{
+		if (tab[temp].rekord< tab[i].rekord)
+		{
+			temp=i;
+		}
+	}
+	return tab[temp];
+}
+
+int main()
+{
+	struct Sportowiec s1 = ("Abc",34);
+	struct Sportowiec s2 = ("Def",12);
+	struct Sportowiec s3 = ("Ghi",-89);
+	struct Sportowiec tablica[3] = (s1,s2,s3);
+	struct Sportowiec wynik = foo(tablica,3);
+	return 0;
+}
+
+
+
+
+
+
+stwórz w main przypadek testowy dla owej funkcji

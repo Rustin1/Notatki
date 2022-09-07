@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void foo(int n, int * tab)
+{
+	for(int i=0;i<n;i++)
+	{
+		printf("%d\n",*(tab-i));
+	}
+}
+
+int main()
+{
+	int tablica[4] = {2,-3,11,-8};
+	foo(4,tablica+3);
+	return 0;
+}
+
+
+
+
+argument jako liczba całkowita (stanowi rozmiar tablicy) i wzskaźnik na int (odpowiada
+za przechowanie ostatniego elementu w tablicy). tablica jednowymiarowa z elementami
+typu int. funkcja ma wyświetlać w kolejnych wierszach elementy tablicy od końca do
+początku
